@@ -636,6 +636,12 @@ class SurahAlKahfApp {
             selector.appendChild(option);
         }
     }
+    const menuToggle = document.querySelector('.menu-toggle');
+const navList = document.querySelector('.nav-list');
+
+menuToggle.addEventListener('click', () => {
+  navList.classList.toggle('open');
+});
 
     renderAllVerses() {
         const container = document.getElementById('verses-container');
