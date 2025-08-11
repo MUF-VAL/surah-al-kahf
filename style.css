@@ -1486,4 +1486,14 @@ body {
         transform: translateY(0);
     }
 }
+@media screen and (max-width: 768px) {
+    .nav-list {
+        flex-direction: column; /* stack vertically */
+        align-items: center;    /* center align */
+    }
+    .nav-list li {
+        margin: 5px 0; /* vertical spacing */
+    }
+}
 ```
+
