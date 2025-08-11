@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f0;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background: #006400;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.2em;
+  margin: 0;
+  font-family: 'Amiri', serif;
+}
+
+header h2 {
+  font-weight: normal;
+  font-size: 1.4em;
+}
+
+#surah-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.verse {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.arabic {
+  font-size: 1.4em;
+  direction: rtl;
+  text-align: right;
+  font-family: 'Amiri', serif;
+  color: #004d00;
+}
+
+.translation {
+  font-size: 1em;
+  color: #555;
+  margin-top: 8px;
+}
+
+footer {
+  background: #004d00;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+}
+
+@media screen and (max-width: 600px) {
+  .arabic {
+    font-size: 1.2em;
+  }
+}
