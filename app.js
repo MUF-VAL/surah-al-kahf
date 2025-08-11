@@ -570,7 +570,6 @@ class SurahAlKahfApp {
             this.renderAllVerses();
             this.setupScrollToTop();
             this.setupJumpToVerse();
-            this.setupUtilityFeatures();
             console.log('🕌 Surah Al-Kahf website loaded successfully with all verses!');
         } catch (error) {
             console.error('❌ Error initializing app:', error);
@@ -738,32 +737,6 @@ class SurahAlKahfApp {
         });
     }
 
-    setupUtilityFeatures() {
-        // Print button
-        const printButton = document.createElement('button');
-        printButton.innerHTML = '🖨️ Print';
-        printButton.style.cssText = `
-            position: fixed; top: 100px; right: 20px;
-            background: #1a5b4a; color: white; border: none;
-            padding: 10px 15px; border-radius: 5px; cursor: pointer;
-            font-size: 14px; z-index: 1000;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-        `;
-        printButton.addEventListener('click', () => window.print());
-        document.body.appendChild(printButton);
-
-        // Verse counter
-        const counter = document.createElement('div');
-        counter.id = 'verse-counter';
-        counter.style.cssText = `
-            position: fixed; top: 160px; right: 20px;
-            background: white; padding: 10px; border-radius: 5px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-            font-size: 14px; z-index: 1000;
-        `;
-        counter.innerHTML = `Total Verses: ${this.versesData.total_verses}`;
-        document.body.appendChild(counter);
-    }
 
     showErrorMessage() {
         const container = document.getElementById('verses-container');
